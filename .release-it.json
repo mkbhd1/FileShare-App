@@ -1,0 +1,25 @@
+{
+  "verbose": true,
+  "buildCommand": "npm run package-win && npm run package-linux",
+  "pkgFiles": [
+    "package.json",
+    "app/package.json"
+  ],
+  "src": {
+    "commitMessage": "Release %s",
+    "tagName": "v%s"
+  },
+  "dist": {
+    "baseDir": false
+  },
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": true,
+    "releaseName": "%s",
+    "preRelease": true,
+    "draft": true,
+    "tokenRef": "GITHUB_TOKEN"
+  }
+}
